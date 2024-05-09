@@ -9,6 +9,5 @@ client.on("guildMemberAdd", (member) => {
   
     member.roles.add(cargo_autorole.id).catch(err => {
       console.log(`❌ Não foi possível adicionar o cargo de autorole no usuário ${member.user.tag}.`)
-    
     })
   })

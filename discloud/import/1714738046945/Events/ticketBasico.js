@@ -47,7 +47,7 @@ client.on("interactionCreate", async (interaction) => {
                     ]
                 }).then((chat) => {
                     salaAbertas[usuarioId] = chat;
-                    interaction.reply({ content: `Jagunço **${nome_usuario_servidor}**, sua pasta foi aberta em ${chat}.`, ephemeral: true });
+                    interaction.reply({ content: `Olá **${nome_usuario_servidor}**, seu ticket foi aberto em ${chat}.`, ephemeral: true });
 
                     let embed = new Discord.EmbedBuilder()
                         .setColor("Random")
@@ -113,7 +113,7 @@ client.on("interactionCreate", async (interaction) => {
                 return;
             }
             
-            interaction.reply(`Fala Jagunço, Desgraçado a meta não foi batida.\n\n**------------------------META NÃO FOI BATIDA------------------------\n\n\n\n ------------------------META RESETADA------------------------**\n\n\n\n**COLDOWN DE UMA AÇÃO POR NÃO BATER A META**`);
+            interaction.reply(`Fala Jagunço, Parabenéns por ter batido a meta.\n\n**------------------------META NÃO FOI BATIDA------------------------\n\n ------------------------META RESETADA------------------------**\n\n**COLDOWN DE UMA AÇÃO POR NÃO BATER A META**`);
         
 
         } else if (interaction.customId === "week_goal2") {
@@ -122,7 +122,7 @@ client.on("interactionCreate", async (interaction) => {
                 return;
             }
 
-            interaction.reply(`Fala Jagunço, Parabéns por ter batido a meta.\n\n**------------------------META BATIDA------------------------\n\n\n\n ------------------------META RESETADA------------------------**`);
+            interaction.reply(`Fala Jagunço, Parabenéns por ter batido a meta.\n\n**------------------------META BATIDA------------------------\n\n ------------------------META RESETADA------------------------**`);
         }
     }
 });
